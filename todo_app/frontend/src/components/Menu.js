@@ -1,14 +1,19 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 
 const MenuList = () => {
     return(
         <table>
-            <tr>
-                <td>Menu item 1</td>
-                <td>Menu item 2</td>
-                <td>Menu item 3</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <nav>
+                        <td><Link to='/'>Users</Link></td>
+                        <td><Link to='/projects'>Projects</Link></td>
+                        <td><Link to='/todos'>ToDos</Link></td>
+                    </nav>
+                </tr>
+            </tbody>
         </table>
     )
 }
