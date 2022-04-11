@@ -7,11 +7,11 @@ const MenuList = () => {
         <table>
             <tbody>
                 <tr>
-                    <nav>
-                        <td><Link to='/'>Users</Link></td>
-                        <td><Link to='/projects'>Projects</Link></td>
-                        <td><Link to='/todos'>ToDos</Link></td>
-                    </nav>
+
+                        <td><nav><Link to='/'>Users</Link></nav></td>
+                        <td><nav><Link to='/projects'>Projects</Link></nav></td>
+                        <td><nav><Link to='/todos'>ToDos</Link></nav></td>
+
                 </tr>
             </tbody>
         </table>

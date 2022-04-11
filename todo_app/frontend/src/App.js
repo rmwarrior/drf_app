@@ -10,6 +10,7 @@ import ProjectList from "./components/Project";
 import ToDoList from "./components/ToDo";
 import {HashRouter, BrowserRouter, Switch, Redirect, Route} from "react-router-dom"; // именно Route (не Router)
 import PageNotFound404 from "./components/PageNotFound404";
+import UserProjectList from "./components/UserProject";
 
 class App extends React.Component {
   constructor(props) {
@@ -67,6 +68,7 @@ class App extends React.Component {
             <Redirect from='/users' to='/' />
             <Route exact path='/projects' component={() => <ProjectList projects={this.state.projects}/>} />
             <Route exact path='/todos' component={() => <ToDoList todos={this.state.todos}/>} />
+            <Route path='/user/:id' component={() => <UserProjectList projects={this.state.projects}/>} />
 
 
             <Route component={PageNotFound404} />
