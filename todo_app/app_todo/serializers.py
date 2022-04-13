@@ -4,8 +4,8 @@ from .models import Project, ToDo
 
 
 class ProjectModelSerializer(ModelSerializer):
-    # users = UserModelSerializer(many=True)
-    users = StringRelatedField(many=True)
+    users = UserModelSerializer(many=True)
+    # users = StringRelatedField(many=True)
 
     class Meta:
         model = Project
